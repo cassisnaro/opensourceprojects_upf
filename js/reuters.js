@@ -1,10 +1,11 @@
+var ip = location.host;
 var Manager;
 
 (function ($) {
 
   $(function () {
     Manager = new AjaxSolr.Manager({
-      solrUrl: 'http://193.145.44.156:8983/solr/collection1/'
+      solrUrl: 'http://' + ip + ':8983/solr/collection1/'
     });
     Manager.addWidget(new AjaxSolr.ResultWidget({
       id: 'result',
