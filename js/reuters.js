@@ -59,7 +59,7 @@ var Manager;
       'facet.date.start': '2007-01-01T00:00:00.000Z/DAY',
       'facet.date.end': '2007-12-31T00:00:00.000Z/DAY+1DAY',
       'facet.date.gap': '+1DAY',
-  //    'json.nl': 'map'
+      'json.nl': 'map'
     };
     for (var name in params) {
       Manager.store.addByValue(name, params[name]);
